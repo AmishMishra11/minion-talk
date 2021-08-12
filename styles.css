@@ -77,7 +77,7 @@ body {
 }
 
 /* output */
-.output {
+.translated {
   overflow: scroll;
   margin-top: 1rem;
   margin-bottom: 1rem;
