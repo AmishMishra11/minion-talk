@@ -10,9 +10,8 @@ function translateText(text) {
   return serverURL + "?" + "text=" + text;
 }
 
-function errorCatcher(error){
-  alert("server seems to be down try again later")
-
+function errorCatcher(error) {
+  alert("server seems to be down try again later");
 }
 
 function clickEvent() {
@@ -22,8 +21,8 @@ function clickEvent() {
     .then((json) => {
       var translateText = json.contents.translated;
       output.innerText = translateText;
-    });
-    .catch(errorCatcher)
+    })
+    .catch(errorCatcher);
 }
 
 btnTranslate.addEventListener("click", clickEvent);
