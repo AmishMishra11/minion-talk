@@ -10,6 +10,11 @@ function translateText(text) {
   return serverURL + "?" + "text=" + text;
 }
 
+function errorCatcher(error){
+  alert("server seems to be down try again later")
+
+}
+
 function clickEvent() {
   var inputText = txtInput.value;
   fetch(translateText(inputText))
@@ -18,6 +23,7 @@ function clickEvent() {
       var translateText = json.contents.translated;
       output.innerText = translateText;
     });
+    .catch(errorCatcher)
 }
 
 btnTranslate.addEventListener("click", clickEvent);
