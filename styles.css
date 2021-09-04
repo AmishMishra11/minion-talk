@@ -9,17 +9,15 @@ body {
   margin: 0px;
 }
 
-/* container */
 .container {
   padding: 0rem 1rem;
 }
 
 .container-center {
-  max-width: 600px;
+  max-width: 45%;
   margin: auto;
 }
 
-/* navigation */
 .navigation {
   background-color: var(--primary-color);
   color: black;
@@ -32,30 +30,21 @@ body {
   font-size: 2rem;
 }
 
-.column {
+.leftbox {
   float: left;
-  width: 30.33%;
-  padding: 5px;
+  width: 25%;
+}
+.rightbox {
+  float: right;
+  width: 25%;
 }
 
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
 .img {
-  height: 500px;
+  margin-left: 2rem;
+  height: 450px;
   width: 300px;
 }
 
-.img1 {
-  padding: 3rem 1rem 0rem 7rem;
-  height: 400px;
-}
-.img2 {
-  padding-left: 7rem;
-}
-/* textarea */
 .textarea {
   margin-top: 3rem;
   margin-bottom: 1rem;
@@ -67,7 +56,6 @@ body {
   font-family: "Source Code Pro", monospace;
 }
 
-/* button */
 .button {
   margin-bottom: 1rem;
   display: block;
@@ -76,7 +64,6 @@ body {
   font-family: "Source Code Pro", monospace;
 }
 
-/* output */
 .translated {
   overflow: scroll;
   margin-top: 1rem;
@@ -90,8 +77,8 @@ body {
   font-family: "Source Code Pro", monospace;
 }
 
-/* footer */
 .footer {
+  margin-top: 3rem;
   background-color: var(--primary-color);
   color: black;
   padding: 1.5rem 0rem;
